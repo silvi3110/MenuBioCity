@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <span class="bio">Bio</span><span class="city">City</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Aquí va tu contenido (por ejemplo las notas) -->
+
+  <!-- Botón flotante central -->
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="navigateToAddNote()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1">
+      <ion-icon name="home"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2">
+      <!-- El botón "+" ahora está flotando, así que este botón normal puede estar oculto si quieres -->
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab3">
+      <ion-icon name="navigate"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

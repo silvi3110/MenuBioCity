@@ -1,0 +1,73 @@
+ion-content {
+  --background: #ffffff;
+}
+
+ion-title {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.biocity-title {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.bio {
+  color: #2E7D32; /* Verde fuerte */
+}
+
+.city {
+  color: #00796B; /* Azul ecológico */
+}
+
+ion-searchbar {
+  margin: 16px;
+  border-radius: 12px;
+  --background: #A5D6A7; /* Verde claro */
+  --color: #00796B;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ion-card {
+  margin: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+}
+
+ion-card:hover {
+  transform: scale(1.01);
+}
+
+ion-card-header {
+  background-color: #E0F2F1; /* Azul ecológico suave */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+ion-card-title {
+  color: #2E7D32;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ion-card-subtitle {
+  color: #424242;
+  font-size: 12px;
+}
+
+ion-card-content {
+  font-size: 14px;
+  color: #212121;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

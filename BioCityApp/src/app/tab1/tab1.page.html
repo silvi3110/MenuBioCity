@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>
+      <div class="biocity-title">
+        <span class="bio">Bio</span><span class="city">City</span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-searchbar
+    [(ngModel)]="textoBuscar"
+    (ionInput)="filtrarNotas()"
+    placeholder="🔍 Buscar por título o autor">
+  </ion-searchbar>
+
+  <ion-card *ngFor="let nota of notasFiltradas; let i = index">
+    <ion-card-header>
+      <ion-card-title>{{ nota.titulo }}</ion-card-title>
+      <ion-card-subtitle>{{ nota.fecha }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <img *ngIf="nota.imagen; else sinImagen" [src]="nota.imagen" />
+    <ng-template #sinImagen>
+      <img src="assets/default-image.jpg" />
+    </ng-template>
+
+    <ion-card-content>
+      <p>{{ nota.descripcion }}</p>
+      <ion-text color="tertiary">
+        <small>{{ nota.autor }}</small>
+      </ion-text>
+
+      <ion-buttons class="ion-justify-content-end">
+        <ion-button color="success" size="small" (click)="editarNota(i)">Editar</ion-button>
+        <ion-button color="danger" size="small" (click)="eliminarNota(i)">Eliminar</ion-button>
+      </ion-buttons>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,23 @@
+ion-tab-bar {
+  --background: #ffffff;
+  --color: #424242;
+  --color-selected: #2E7D32;
+  border-top: none;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.custom-fab {
+  ion-fab-button {
+    --background: #2E7D32; /* Verde fuerte */
+    --color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    width: 56px;
+    height: 56px;
+    transition: background-color 0.3s ease;
+  }
+
+  ion-fab-button:hover {
+    --background: #66BB6A; /* Verde claro al pasar el mouse */
+  }
+}

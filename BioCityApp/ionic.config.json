@@ -1,0 +1,7 @@
+{
+  "name": "BioCityApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
